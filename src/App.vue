@@ -5,10 +5,11 @@ import HelloWorld from '@/components/HelloWorld.vue'
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <div alt="Poem Logo" class="logo">
+    </div>
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <HelloWorld msg="Write poems from your heart" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
@@ -37,8 +38,13 @@ header {
 }
 
 .logo {
+  -webkit-mask: url("@/assets/logo.svg") no-repeat center;
+  mask: url("@/assets/logo.svg") no-repeat center;
+  background-color: white;
   display: block;
   margin: 0 auto 2rem;
+  width: 250pt;
+  height: 250pt;
 }
 
 a,
